@@ -1,0 +1,27 @@
+{
+  "title": "Resource Callout",
+  "parameters": {
+    "server": {
+      "url": "https:\/\/sca-web.lndo.site\/storybook\/stories\/render"
+    }
+  },
+  "stories": [
+    {
+      "name": "Default",
+      "args": {
+        "details": "Aliquam sit amet sem sem. Nulla tristique, ligula aliquet finibus pulvinar, ex nunc varius libero, non lacinia turpis odio eget sapien. Nunc maximus dapibus quam sit amet tincidunt. Donec lacinia, augue id suscipit porttitor, nisl est pellentesque lorem, non efficitur magna ligula porta neque.",
+        "links": [
+          { "linkText": "Link to Resource", "linkUrl": "#" },
+          { "linkText": "Link to Resource", "linkUrl": "#" },
+          { "linkText": "Link to Resource", "linkUrl": "#" },
+          { "linkText": "Link to Resource", "linkUrl": "#" }
+        ]
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL3Jlc291cmNlLWNhbGxvdXRcL3Jlc291cmNlLWNhbGxvdXQuc3Rvcmllcy50d2lnIiwiaWQiOiJkZWZhdWx0In0%3D"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+name: 'Search'
+props:
+  type: object
+  properties:
+    classes:
+      type: array

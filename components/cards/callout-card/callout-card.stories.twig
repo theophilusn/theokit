@@ -1,0 +1,64 @@
+{% stories callout_card with { title: "Cards/Callout Card"} %}
+    {% story event with {
+        name: "Event",
+        args: {
+            title: "Events",
+            callout: "event",
+            limit: false,
+            linkHref: "#",
+            linkText: "View All Events",
+            description: "Learn about events in your area that help foster and build community for cancer patients in Saskatchewan."
+        }
+    } %}
+        {% include 'duchess:callout-card' with {
+            title: title,
+            callout: callout,
+            limit: limit,
+            linkHref: linkHref,
+            linkText: linkText,
+            description: description
+        } %}
+    {% endstory %}
+
+    {% story news with {
+        name: "News",
+        args: {
+            title: "News",
+            callout: "news",
+            limit: false,
+            linkHref: "#",
+            linkText: "Read More",
+            description: "Read the latest news being announced by our team and cancer researchers, and learn about events in your area that help build community for Saskatchewan cancer patients."
+        }
+    } %}
+        {% include 'duchess:callout-card' with {
+            title: title,
+            callout: callout,
+            limit: limit,
+            linkHref: linkHref,
+            linkText: linkText,
+            description: description
+        } %}
+    {% endstory %}
+
+    {% story location with {
+        name: "Location",
+        args: {
+            title: "Find a Treatment Centre",
+            callout: "location",
+            limit: false,
+            linkHref: "#",
+            linkText: "View Location",
+            description: "Learn more about our Treatment Centre’s in Saskatchewan and what each location has to offer patients."
+        }
+    } %}
+        {% include 'duchess:callout-card' with {
+            title: title,
+            callout: callout,
+            limit: limit,
+            linkHref: linkHref,
+            linkText: linkText,
+            description: description
+        } %}
+    {% endstory %}
+{% endstories %}

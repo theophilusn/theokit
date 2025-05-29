@@ -1,0 +1,21 @@
+{
+  "title": "Featured Quote",
+  "parameters": {
+    "server": {
+      "url": "https:\/\/sca-web.lndo.site\/storybook\/stories\/render"
+    }
+  },
+  "stories": [
+    {
+      "name": "Default",
+      "args": {
+        "quote": "Every patient\u2019s journey is unique and we\u2019re here to help you find your right fit."
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2ZlYXR1cmVkLXF1b3RlXC9mZWF0dXJlZC1xdW90ZS5zdG9yaWVzLnR3aWciLCJpZCI6ImRlZmF1bHQifQ%3D%3D"
+        }
+      }
+    }
+  ]
+}

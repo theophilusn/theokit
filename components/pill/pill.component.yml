@@ -1,0 +1,6 @@
+name: Pill
+props:
+  type: object
+  properties:
+    label:
+      type: string

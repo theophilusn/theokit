@@ -1,0 +1,9 @@
+{% extends 'duchess:input' %}
+
+{% if attributes.type is empty %}
+  {% set attributes = attributes.setAttribute('type', 'checkbox') %}
+{% endif %}
+{% set attributes = attributes.addClass([
+  'hidden peer'
+]) %}
+

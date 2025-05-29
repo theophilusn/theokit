@@ -1,0 +1,10 @@
+name: Appointment Card
+props:
+  type: object
+  properties:
+    title:
+      type: string
+    subtitle:
+      type: string
+    options:
+      type: array

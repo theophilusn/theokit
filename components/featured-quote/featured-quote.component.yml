@@ -1,0 +1,8 @@
+name: Featured Quote
+props:
+  type: object
+  required:
+    - quote
+  properties:
+    quote:
+      type: string

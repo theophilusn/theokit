@@ -1,0 +1,24 @@
+{
+  "title": "Cards\/Landing Page Card",
+  "parameters": {
+    "server": {
+      "url": "https:\/\/sca-web.lndo.site\/storybook\/stories\/render"
+    }
+  },
+  "stories": [
+    {
+      "name": "Default",
+      "args": {
+        "title": "Clinical Practice Guidelines",
+        "linkText": "View Locations",
+        "linkHref": "#",
+        "content": "Learn more about our Treatment Centre\u2019s in Saskatchewan and what each location has to offer patients."
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2NhcmRzXC9sYW5kaW5nLXBhZ2UtY2FyZFwvbGFuZGluZy1wYWdlLWNhcmQuc3Rvcmllcy50d2lnIiwiaWQiOiJkZWZhdWx0In0%3D"
+        }
+      }
+    }
+  ]
+}

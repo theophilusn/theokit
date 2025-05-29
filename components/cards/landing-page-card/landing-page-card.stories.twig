@@ -1,0 +1,18 @@
+{% stories landing_page_card with { title: "Cards/Landing Page Card"} %}
+    {% story default with {
+        name: "Default",
+        args: {
+            title: "Clinical Practice Guidelines",
+            linkText: "View Locations",
+            linkHref: "#",
+            content: "Learn more about our Treatment Centre’s in Saskatchewan and what each location has to offer patients."
+        }
+    } %}
+        {% include 'duchess:landing-page-card' with {
+            title: title,
+            content: content,
+            linkText: linkText,
+            linkHref: linkHref
+            } %}
+    {% endstory %}
+{% endstories %}

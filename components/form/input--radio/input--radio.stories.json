@@ -1,0 +1,19 @@
+{
+  "title": "Form\/Input Radio",
+  "parameters": {
+    "server": {
+      "url": "https:\/\/sca-web.lndo.site\/storybook\/stories\/render"
+    }
+  },
+  "stories": [
+    {
+      "name": "Default",
+      "args": [],
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2Zvcm1cL2lucHV0LS1yYWRpb1wvaW5wdXQtLXJhZGlvLnN0b3JpZXMudHdpZyIsImlkIjoiZGVmYXVsdCJ9"
+        }
+      }
+    }
+  ]
+}

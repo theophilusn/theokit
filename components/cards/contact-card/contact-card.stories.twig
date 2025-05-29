@@ -1,0 +1,19 @@
+{% stories contact_card with { title: "Cards/Contact Card"} %}
+    {% story default with {
+        name: "Default",
+        args: {
+            name: "Donna Anderson",
+            title: "Booking Administrator",
+            phone: "306-934-8374",
+            email: "donna.anderson@mail.com"
+        }
+    } %}
+        {% embed 'duchess:contact-card' with {
+            name: name,
+            title: title,
+            phone: phone,
+            email: email
+        } %}
+        {% endembed %}
+    {% endstory %}
+{% endstories %}

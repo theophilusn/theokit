@@ -1,0 +1,6 @@
+name: 'Video Gallery'
+props:
+  type: object
+  properties:
+    items:
+      type: array

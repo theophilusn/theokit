@@ -1,0 +1,34 @@
+{% stories resource_callout with { title: "Resource Callout"} %}
+    {% story default with {
+        name: "Default",
+        args: {
+            details: "Aliquam sit amet sem sem. Nulla tristique, ligula aliquet finibus pulvinar, ex nunc varius libero, non lacinia turpis odio eget sapien. Nunc maximus dapibus quam sit amet tincidunt. Donec lacinia, augue id suscipit porttitor, nisl est pellentesque lorem, non efficitur magna ligula porta neque.",
+            links: [
+                {
+                    linkText: "Link to Resource",
+                    linkUrl: "#"
+                },
+                {
+                    linkText: "Link to Resource",
+                    linkUrl: "#"
+                },
+                {
+                    linkText: "Link to Resource",
+                    linkUrl: "#"
+                },
+                {
+                    linkText: "Link to Resource",
+                    linkUrl: "#"
+                }
+            ]
+        }
+    } %}
+        {% embed 'duchess:resource-callout' with {
+            links: links,
+        } %}
+            {% block details %}
+                <p>{{ details }}</p>
+            {% endblock %}
+        {% endembed %}
+    {% endstory %}
+{% endstories %}

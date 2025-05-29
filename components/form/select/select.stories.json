@@ -1,0 +1,26 @@
+{
+  "title": "Form\/Select",
+  "parameters": {
+    "server": {
+      "url": "https:\/\/sca-web.lndo.site\/storybook\/stories\/render"
+    }
+  },
+  "stories": [
+    {
+      "name": "Dropdown Menu",
+      "args": {
+        "options": [
+          { "value": "begin", "link": "#", "label": "Begin Your Journey" },
+          { "value": "item1", "link": "#link1", "label": "List Item 1" },
+          { "value": "item2", "link": "#link2", "label": "List Item 2" },
+          { "value": "item3", "link": "#link3", "label": "List Item 3" }
+        ]
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2Zvcm1cL3NlbGVjdFwvc2VsZWN0LnN0b3JpZXMudHdpZyIsImlkIjoiZHJvcGRvd25fbWVudSJ9"
+        }
+      }
+    }
+  ]
+}

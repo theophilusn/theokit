@@ -1,0 +1,42 @@
+{% if view == 'full' %}
+    {% set cardClasses = 'sm:rounded-t-[30px] sm:border-t-[6px] sm:border-r-[6px] sm:max-w-[80rem] sm:max-h-80 sm:flex relative' %}
+{% elseif view == 'sidebar' %}
+    {% set cardClasses = 'sm:w-96 rounded-[30px] border-b-[6px] border-x-[6px] w-full md:w-96 lg:w-72 xl:w-80 2xl:w-96' %}
+{% elseif view == 'mini' %}
+    {% set cardClasses = 'w-full sm:w-96 lg:w-[27rem] sm:flex border-[6px] rounded-[30px]' %}
+{% else %}
+    {% set cardClasses = 'sm:rounded-t-[30px] sm:border-t-[6px] sm:border-r-[6px] sm:max-w-[53rem] sm:max-h-96 sm:flex' %}
+{% endif %}
+
+<div class="overflow-hidden">
+    <div class="{{ cardClasses }} border-duchess-tan-15">
+        <div class="[&_img]:sm:rounded-tl-[30px] {{ view == 'sidebar' ? '[&_img]:profile-bottom-border [&_img]:rounded-t-[30px]' : '[&_img]:sm:profile-right-border [&_img]:profile-bottom-border' }} {{ view == 'mini' ? '[&_img]:hidden' }}">
+            {{ image }}
+        </div>
+        {% if view == 'full' %}
+            <img src="/themes/custom/duchess/images/icons/heart--{{ brandColour }}.svg"
+                 alt="{{ brandColour }} heart icon"
+                 class="mb-6 pt-2 absolute top-0 right-5 ml-auto">
+        {% endif %}
+        <div class="relative pt-8 px-10 pb-10 {{ view == 'full' ? 'md:w-[300px] lg:w-[700px] xl:w-[800px]' }} {{ view == 'mini' ? 'w-full' }}">
+            <div class="flex justify-between items-center">
+                <h4 class="text-3xl font-extrabold text-duchess-{{ brandColour }}">{{ title }}<span class="text-duchess-tan">.</span>
+                </h4>
+                {% if view is not same as 'full' %}
+                <img src="/themes/custom/duchess/images/icons/heart--{{ brandColour }}.svg"
+                     alt="{{ brandColour }} heart icon"
+                     class="mb-6 pt-2 {{ view == 'mini' ? 'w-16 h-16 pr-0 -mr-8' : 'pr-5' }} ml-auto">
+                {% endif %}
+            </div>
+
+            <div class="{{ view == 'full' ? 'lg:pt-12' }} sm:hidden md:block"><p class="line-clamp-6 {{ view == 'mini' ? 'hidden' }}">{{ description }}</p></div>
+
+            <a href="{{ linkHref }}" class="pt-8 flex">
+                <img src="/themes/custom/duchess/images/icons/list-link-bullet.svg" alt="link icon">
+                <div class="pl-3 hover:underline decoration-duchess-pink">{{ linkText }}</div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="h-7 {{ view == 'full' ? 'max-w-[80rem]' : 'max-w-[53rem]' }} {{ (view == 'sidebar' or view == 'mini') ? 'hidden' }} bg-gradient-to-r from-duchess-pink to-duchess-light-blue sm:rounded-b-2xl">
+</div>

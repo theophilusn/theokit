@@ -1,0 +1,26 @@
+{% if callout == 'event' %}
+    {% set calloutBg = 'bg-duchess-green' %}
+{% elseif callout == 'news' %}
+    {% set calloutBg = 'bg-duchess-blue' %}
+{% else %}
+    {% set calloutBg = 'bg-white' %}
+{% endif %}
+
+<div class="{{ calloutBg }} p-6 rounded-[30px] shadow prose border-[6px] border-duchess-tan-15 bg-card-circle bg-no-repeat relative w-full md:w-96 lg:w-72 xl:w-80 2xl:w-96 bg-[right_-1rem_top_-1rem] {{ limit ? 'h-[21rem] md:h-[19rem]' }}">
+    <div class="flex ">
+        <h4 class="{{ callout == 'location' ? 'text-duchess-green' : 'text-white' }} my-0 max-w-[12rem] sm:max-w-[12.5rem]">{{ title }}<span class="text-duchess-tan">.</span></h4>
+        <img src="/themes/custom/duchess/images/icons/{{ callout }}.svg" alt="{{ callout }} icon" class="ml-auto self-start">
+    </div>
+    <div>
+        <p class="{{ callout == 'location' ? 'text-black' : 'text-white' }} {{ limit ? 'line-clamp-4 md:line-clamp-3' : 'line-clamp-none mb-6' }} mt-2">{{ description }}</p>
+    </div>
+
+    <div class="{{ limit ? 'absolute bottom-0 mb-6' }}">
+        {% include 'duchess:button' with {
+            colour: callout == 'location' ? 'green' : 'tan',
+            linkHref,
+            linkText
+        } %}
+    </div>
+</div>
+

@@ -1,0 +1,32 @@
+{
+  "title": "Cards\/Download Card",
+  "parameters": {
+    "server": {
+      "url": "https:\/\/sca-web.lndo.site\/storybook\/stories\/render"
+    }
+  },
+  "stories": [
+    {
+      "name": "Default",
+      "args": {
+        "files": [
+          {
+            "fileName": "Drug Formulary",
+            "fileLink": "themes\/custom\/duchess\/components\/cards\/download-card\/TestDoc.pdf",
+            "fileType": "(PDF)"
+          },
+          {
+            "fileName": "User Guide",
+            "fileLink": "themes\/custom\/duchess\/components\/cards\/download-card\/TestDoc.pdf",
+            "fileType": "(PDF)"
+          }
+        ]
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2NhcmRzXC9kb3dubG9hZC1jYXJkXC9kb3dubG9hZC1jYXJkLnN0b3JpZXMudHdpZyIsImlkIjoiZGVmYXVsdCJ9"
+        }
+      }
+    }
+  ]
+}

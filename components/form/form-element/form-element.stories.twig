@@ -1,0 +1,27 @@
+{% stories form_element with { title: "Form/Form Element"} %}
+    {% story default with {
+        name: "Default",
+        args: {
+            label_display: "before",
+            label_text: "Label",
+            children_html: "{% include 'duchess:input--textfield' with { attributes: create_attribute().setAttribute('type', 'textfield').setAttribute('id', 'test') } %}",
+            label_html: "  {% include 'duchess:form-element-label' with { title: label_text, attributes: create_attribute().setAttribute('for', 'test') } %}",
+            description: {
+                content: "Description"
+            },
+            description_display: "after"
+        }
+    } %}
+        {% embed 'duchess:form-element' with {
+            description: description.content,
+            description_display: description_display
+        } %}
+            {% block children_html %}
+                {{ children_html }}
+            {% endblock %}
+            {% block label_html %}
+                {{ label_html }}
+            {% endblock %}
+        {% endembed %}
+    {% endstory %}
+{% endstories %}

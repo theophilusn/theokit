@@ -1,0 +1,12 @@
+{% stories featured_quote with { title: "Featured Quote"} %}
+    {% story default with {
+        name: "Default",
+        args: {
+            quote: "Every patient’s journey is unique and we’re here to help you find your right fit."
+        }
+    } %}
+        {% include 'duchess:featured-quote' with {
+            quote: quote
+        } %}
+    {% endstory %}
+{% endstories %}

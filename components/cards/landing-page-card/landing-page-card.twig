@@ -1,0 +1,18 @@
+<div class="p-10 rounded-3xl shadow prose bg-card-circle bg-[right_-0.5rem_top] bg-no-repeat relative w-[22rem] sm:w-96 h-96 min-w-[22rem] border-[6px] border-duchess-tan-15 mb-10 lg:mb-0 flex flex-col last:pb-6">
+
+    <h4 class="text-duchess-green max-w-[90%] text-balance">
+        {{ title }}
+        <span class="text-duchess-tan">.</span>
+    </h4>
+
+    <div class="pr-8 mb-4 [&>div]:line-clamp-4 [&>div]:md:line-clamp-6 h-full w-full [&>div]:absolute [&>div]:bottom-0 [&>div]:text-balance relative">
+        {{ content }}
+    </div>
+    <div>
+        {% include 'duchess:button' with {
+            colour: 'green',
+            linkHref,
+            linkText
+        } %}
+    </div>
+</div>

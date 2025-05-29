@@ -1,0 +1,12 @@
+name: Cards/Landing Page Card
+props:
+  type: object
+  properties:
+    title:
+      type: string
+    content:
+      type: string
+    linkText:
+      type: string
+    linkHref:
+      type: string

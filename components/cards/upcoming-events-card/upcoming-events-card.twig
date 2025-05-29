@@ -1,0 +1,26 @@
+<div class="bg-white border-[6px] border-duchess-tan-15 p-6 rounded-xl shadow prose bg-card-circle bg-[right_-1rem_top_-1rem] bg-no-repeat relative w-full md:w-96 lg:w-72 xl:w-80 2xl:w-96">
+    <div class="flex">
+        <h4 class="text-duchess-blue max-w-[10rem] my-0">Upcoming Events<span class="text-duchess-tan">.</span> </h4>
+        <img src="/themes/custom/duchess/images/icons/upcoming-event.svg" alt="event icon" class="ml-auto self-start">
+    </div>
+    <div class="font-semibold lg:font-extrabold pt-4">{{ title }}</div>
+    <div>
+        {{ description }}
+    </div>
+
+    {% if location %}
+        <div class="pt-4"><span class="text-duchess-blue font-extrabold">Location:</span> {{ location }}</div>
+    {% endif %}
+
+    {% if date %}
+        <div><span class="text-duchess-blue font-extrabold">Date:</span> {{ date }}</div>
+    {% endif %}
+
+    <div class="py-8">
+        {% include 'duchess:button' with {
+            colour: 'tan',
+            linkHref,
+            linkText
+        } %}
+    </div>
+</div>

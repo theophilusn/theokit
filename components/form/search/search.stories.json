@@ -1,0 +1,19 @@
+{
+  "title": "Form\/Search",
+  "parameters": {
+    "server": {
+      "url": "https:\/\/sca-web.lndo.site\/storybook\/stories\/render"
+    }
+  },
+  "stories": [
+    {
+      "name": "Default",
+      "args": [],
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2Zvcm1cL3NlYXJjaFwvc2VhcmNoLnN0b3JpZXMudHdpZyIsImlkIjoiZGVmYXVsdCJ9"
+        }
+      }
+    }
+  ]
+}

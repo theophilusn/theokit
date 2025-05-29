@@ -1,0 +1,8 @@
+name: Download Card
+props:
+  type: object
+  properties:
+    files:
+      type: array
+    source:
+      type: array

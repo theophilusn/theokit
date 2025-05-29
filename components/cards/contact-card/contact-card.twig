@@ -1,0 +1,28 @@
+<div class="bg-duchess-green p-6 rounded-[30px] shadow text-white bg-no-repeat relative w-full md:w-96 lg:w-72 xl:w-80 2xl:w-96 bg-[url('/images/icons/contact-card-bg.svg')] bg-[right_-0.5rem_top_-0.5rem]">
+    <div class="flex prose mb-3">
+        <h4 class="text-white my-0">Contact<span class="text-duchess-tan">.</span></h4>
+        <img src="/themes/custom/duchess/images/icons/contact.svg" alt="contact icon" class="ml-auto self-start">
+    </div>
+    <div class="not-prose">
+        <div class="font-bold text-xl leading-10">{{ name }}</div>
+        <div>{{ title }}</div>
+
+        {% if phone %}
+            <div class="text-base mt-6">
+                <b>Phone:</b> {{ phone }}
+            </div>
+        {% endif %}
+
+        {% if email %}
+            <div class="mt-6">
+                {% include 'duchess:button' with {
+                    colour: 'dark-blue',
+                    icon: 'arrow',
+                    linkHref: 'mailto:' ~ email,
+                    linkText: 'Email'
+                } %}
+            </div>
+        {% endif %}
+    </div>
+</div>
+

@@ -1,0 +1,21 @@
+<div class="container prose max-w-none prose-img:my-0 prose-img:rounded-xl p-4 lg:border-[6px] border-duchess-tan-15 rounded-xl">
+    <h5 class="text-duchess-dark-blue mb-4 -mx-8 md:mx-0">Photos</h5>
+    <div class="grid grid-cols-1 md:mx-0 max-w-none lg:grid-cols-2 gap-4 pb-8">
+        {% for item in items %}
+            <a data-popover-target="item-{{ loop.index }}" data-popover-trigger="click" data-popover-placement="top" class="-mb-16 max-w-none hidden xl:block">
+                {{ item.content }}
+            </a>
+            <div class="-mb-16 -mx-8 md:mx-0 max-w-none xl:hidden">
+                {{ item.content }}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% for item in items %}
+    <div data-popover id="item-{{ loop.index }}" class="absolute z-50 invisible w-[75%] transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0">
+        <div class="px-3 py-2">
+            {{ item.content }}
+        </div>
+    </div>
+{% endfor %}

@@ -1,0 +1,22 @@
+{% stories upcoming_events_card with { title: "Cards/Upcoming Events Card"} %}
+    {% story default with {
+        name: "Default",
+        args: {
+            title: "Cancer Screening Research Forum",
+            location: "Regina",
+            date: "October 13, 2023",
+            linkHref: "#",
+            linkText: "See more",
+            description: "Learn about the latest research being developed  to screen for various types of cancer for our patients."
+        }
+    } %}
+        {% include 'duchess:upcoming-events-card' with {
+            title: title,
+            location: location,
+            date: date,
+            linkHref: linkHref,
+            linkText: linkText,
+            description: description
+        } %}
+    {% endstory %}
+{% endstories %}

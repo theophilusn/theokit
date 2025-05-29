@@ -1,0 +1,15 @@
+name: Link Card
+props:
+  type: object
+  properties:
+    title:
+      type: string
+    limit:
+      type: boolean
+    links:
+      type: array
+    variant:
+      type: string
+      enum:
+        - default
+        - intranet

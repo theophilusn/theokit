@@ -1,0 +1,23 @@
+{% stories featured_news_card with { title: "Cards/Featured News Card"} %}
+    {% story default with {
+        name: "Default",
+        args: {
+            description: "Saskatchewan Cancer Agency Launches Program to Help Train Community Support Groups",
+            date: "July 17, 2023",
+            image: {
+                src: "/themes/custom/duchess/images/lisa_profile.png",
+                alt: "Lisa's profile picture"
+            },
+            linkText: "Read Fully Story",
+            linkHref: "#"
+        }
+    } %}
+        {% include 'duchess:featured-news-card' with {
+            date: date,
+            linkText: linkText,
+            linkHref: linkHref,
+            description: description,
+            image: image,
+        } %}
+    {% endstory %}
+{% endstories %}

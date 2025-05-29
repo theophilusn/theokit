@@ -1,0 +1,28 @@
+{
+  "title": "Cards\/Featured News Card",
+  "parameters": {
+    "server": {
+      "url": "https:\/\/sca-web.lndo.site\/storybook\/stories\/render"
+    }
+  },
+  "stories": [
+    {
+      "name": "Default",
+      "args": {
+        "description": "Saskatchewan Cancer Agency Launches Program to Help Train Community Support Groups",
+        "date": "July 17, 2023",
+        "image": {
+          "src": "\/themes\/custom\/duchess\/images\/lisa_profile.png",
+          "alt": "Lisa's profile picture"
+        },
+        "linkText": "Read Fully Story",
+        "linkHref": "#"
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2NhcmRzXC9mZWF0dXJlZC1uZXdzLWNhcmRcL2ZlYXR1cmVkLW5ld3MtY2FyZC5zdG9yaWVzLnR3aWciLCJpZCI6ImRlZmF1bHQifQ%3D%3D"
+        }
+      }
+    }
+  ]
+}

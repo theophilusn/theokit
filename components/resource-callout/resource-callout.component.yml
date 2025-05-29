@@ -1,0 +1,9 @@
+name: Resource Callout
+props:
+  type: object
+  properties:
+    links:
+      type: array
+slots:
+  details:
+    title: Details

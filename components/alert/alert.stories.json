@@ -1,0 +1,19 @@
+{
+  "title": "Alert",
+  "parameters": {
+    "server": {
+      "url": "https:\/\/sca-web.lndo.site\/storybook\/stories\/render"
+    }
+  },
+  "stories": [
+    {
+      "name": "Status",
+      "args": { "type": "status", "messages": ["This is a status message"] },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2FsZXJ0XC9hbGVydC5zdG9yaWVzLnR3aWciLCJpZCI6InN0YXR1cyJ9"
+        }
+      }
+    }
+  ]
+}

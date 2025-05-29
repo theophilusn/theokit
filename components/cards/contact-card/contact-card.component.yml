@@ -1,0 +1,12 @@
+name: Contact Card
+props:
+  type: object
+  properties:
+    name:
+      type: string
+    title:
+      type: string
+    phone:
+      type: string
+    email:
+      type: string

@@ -1,0 +1,37 @@
+<div class="w-full max-w-[52.5rem] bg-duchess-tan-15 border-[6px] border-duchess-tan-15 rounded-3xl prose mt-32">
+    <div class="flex items-center justify-between my-4 ml-11">
+        <h5 class="leading-none">Additional Resources</h5>
+    </div>
+    <div class="flow-root">
+        <ul role="list" class="list-none pl-0 my-0">
+            {% for file in files %}
+                <li class="my-0 pb-8 sm:pb-0 pl-4 sm:pl-8 {{ loop.index is odd ? 'bg-duchess-tan-25' }}">
+                    <div class="sm:flex">
+                            <div class="inline-flex items-center flex-1 flex-shrink-0 min-w-0">
+                                <img src="/themes/custom/duchess/images/icons/list-link-bullet.svg" alt="link icon">
+                                <p class="text-black pl-2">{{ file.fileName }} <span class="text-duchess-dark-grey uppercase">{{ file.fileType }}</span></p>
+                            </div>
+                        <div class="inline-flex items-center">
+                            <div class="mr-5">
+                                {% include 'duchess:button' with {
+                                    colour: 'tan',
+                                    linkHref: source ? (source[loop.index0]['#media']|file_url) : file_url(file.fileLink),
+                                    linkText: 'View',
+                                    linkAttr: 'target=_blank'
+                                } %}
+                            </div>
+                            <div class="mr-11">
+                                {% include 'duchess:button' with {
+                                    colour: 'tan',
+                                    linkHref: source ? (source[loop.index0]['#media']|file_url) : file_url(file.fileLink),
+                                    linkText: 'Download',
+                                    linkAttr: 'download'
+                                } %}
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

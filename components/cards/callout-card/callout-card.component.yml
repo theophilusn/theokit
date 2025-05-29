@@ -1,0 +1,20 @@
+name: Callout Card
+props:
+  type: object
+  properties:
+    title:
+      type: string
+    callout:
+      type: string
+      enum:
+        - event
+        - news
+        - location
+    limit:
+      type: boolean
+    linkText:
+      type: string
+    linkHref:
+      type: string
+    description:
+      type: string

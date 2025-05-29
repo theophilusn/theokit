@@ -1,0 +1,76 @@
+{
+  "title": "Cards\/Patient Story Card",
+  "parameters": {
+    "server": {
+      "url": "https:\/\/sca-web.lndo.site\/storybook\/stories\/render"
+    }
+  },
+  "stories": [
+    {
+      "name": "Default",
+      "args": {
+        "brandColour": "pink",
+        "title": "Janet's Story",
+        "description": "During your treatment, you\u2019ll be able to manage your symptoms with healthcare experts. They\u2019ll give you information and options tailored to your needs. We\u2019ll also help you and your family find community resources. We believe in considering all your options carefully.",
+        "image": "\/themes\/custom\/duchess\/images\/janet_profile.png",
+        "linkText": "Read Full Story",
+        "linkHref": "#link"
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2NhcmRzXC9wYXRpZW50LXN0b3J5LWNhcmRcL3BhdGllbnQtc3RvcnktY2FyZC5zdG9yaWVzLnR3aWciLCJpZCI6ImRlZmF1bHQifQ%3D%3D"
+        }
+      }
+    },
+    {
+      "name": "Full",
+      "args": {
+        "brandColour": "pink",
+        "title": "Janet's Story",
+        "view": "full",
+        "description": "During your treatment, you\u2019ll be able to manage your symptoms with healthcare experts. They\u2019ll give you information and options tailored to your needs. We\u2019ll also help you and your family find community resources. We believe in considering all your options carefully.",
+        "image": "\/themes\/custom\/duchess\/images\/janet_profile.png",
+        "linkText": "Read Full Story",
+        "linkHref": "#link"
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2NhcmRzXC9wYXRpZW50LXN0b3J5LWNhcmRcL3BhdGllbnQtc3RvcnktY2FyZC5zdG9yaWVzLnR3aWciLCJpZCI6ImZ1bGwifQ%3D%3D"
+        }
+      }
+    },
+    {
+      "name": "Sidebar",
+      "args": {
+        "brandColour": "green",
+        "title": "Carmen's Story",
+        "view": "sidebar",
+        "description": "During your treatment, you\u2019ll be able to manage your symptoms with healthcare experts. They\u2019ll give you information and options tailored to your needs. We\u2019ll also help you and your family find community resources. We believe in considering all your options carefully.",
+        "image": "\/themes\/custom\/duchess\/images\/carmen_profile.png",
+        "linkText": "Read Full Story",
+        "linkHref": "#link"
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2NhcmRzXC9wYXRpZW50LXN0b3J5LWNhcmRcL3BhdGllbnQtc3RvcnktY2FyZC5zdG9yaWVzLnR3aWciLCJpZCI6InNpZGViYXIifQ%3D%3D"
+        }
+      }
+    },
+    {
+      "name": "Mini",
+      "args": {
+        "brandColour": "blue",
+        "title": "Douglas' Story",
+        "view": "mini",
+        "description": "During your treatment, you\u2019ll be able to manage your symptoms with healthcare experts. They\u2019ll give you information and options tailored to your needs. We\u2019ll also help you and your family find community resources. We believe in considering all your options carefully.",
+        "linkText": "Read Full Story",
+        "linkHref": "#link"
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2NhcmRzXC9wYXRpZW50LXN0b3J5LWNhcmRcL3BhdGllbnQtc3RvcnktY2FyZC5zdG9yaWVzLnR3aWciLCJpZCI6Im1pbmkifQ%3D%3D"
+        }
+      }
+    }
+  ]
+}

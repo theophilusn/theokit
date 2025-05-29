@@ -1,0 +1,29 @@
+<div data-controller="appointmentCard"
+     class="px-0 py-6 3xs:pl-8 3xs:pr-6 rounded-[1.875rem] relative border border-solid border-5 border-duchess-tan-15 bg-duchess-green bg-no-repeat bg-[right_-2rem_bottom_-1rem] sm:bg-right bg-[url('/images/icons/appointment-card-bg-mobile.svg')]">
+    <div class="sm:flex">
+        <div class="md:w-[45%]">
+            <div class="prose">
+                <h4 class="text-white my-3">{{ title }}<span class="text-duchess-tan">.</span></h4>
+            </div>
+            <h5 class="font-normal text-white">{{ subtitle }}</h5>
+        </div>
+
+        <div class="text-align-center">
+            <div class="md:absolute pt-5 md:top-50 md:right-32">
+                {% embed 'duchess:select--appointment' with {
+                    options: options
+                } %}
+                {% endembed %}
+            </div>
+            <div class="pt-10 md:pt-5 sm:absolute sm:right-8 md:top-50">
+                {% embed 'duchess:button' with {
+                    colour: 'dark-blue',
+                    icon: 'arrow',
+                    linkHref: '#',
+                    linkText: 'Go'
+                } %}
+                {% endembed %}
+            </div>
+        </div>
+    </div>
+</div>

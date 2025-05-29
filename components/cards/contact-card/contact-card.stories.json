@@ -1,0 +1,24 @@
+{
+  "title": "Cards\/Contact Card",
+  "parameters": {
+    "server": {
+      "url": "https:\/\/sca-web.lndo.site\/storybook\/stories\/render"
+    }
+  },
+  "stories": [
+    {
+      "name": "Default",
+      "args": {
+        "name": "Donna Anderson",
+        "title": "Booking Administrator",
+        "phone": "306-934-8374",
+        "email": "donna.anderson@mail.com"
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2NhcmRzXC9jb250YWN0LWNhcmRcL2NvbnRhY3QtY2FyZC5zdG9yaWVzLnR3aWciLCJpZCI6ImRlZmF1bHQifQ%3D%3D"
+        }
+      }
+    }
+  ]
+}

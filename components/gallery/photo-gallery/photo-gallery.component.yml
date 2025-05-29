@@ -1,0 +1,6 @@
+name: 'Photo Gallery'
+props:
+  type: object
+  properties:
+    items:
+      type: array

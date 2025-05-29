@@ -1,0 +1,23 @@
+{% stories download_card with { title: "Cards/Download Card"} %}
+    {% story default with {
+        name: "Default",
+        args: {
+            files: [
+                {
+                    fileName: "Drug Formulary",
+                    fileLink: "themes/custom/duchess/components/cards/download-card/TestDoc.pdf",
+                    fileType: "(PDF)"
+                },
+                {
+                    fileName: "User Guide",
+                    fileLink: "themes/custom/duchess/components/cards/download-card/TestDoc.pdf",
+                    fileType: "(PDF)"
+                }
+            ]
+        }
+    } %}
+        {% include 'duchess:download-card' with {
+            files: files
+        } %}
+    {% endstory %}
+{% endstories %}

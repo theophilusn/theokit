@@ -1,0 +1,26 @@
+{
+  "title": "Form\/Form Element",
+  "parameters": {
+    "server": {
+      "url": "https:\/\/sca-web.lndo.site\/storybook\/stories\/render"
+    }
+  },
+  "stories": [
+    {
+      "name": "Default",
+      "args": {
+        "label_display": "before",
+        "label_text": "Label",
+        "children_html": "{% include 'duchess:input--textfield' with { attributes: create_attribute().setAttribute('type', 'textfield').setAttribute('id', 'test') } %}",
+        "label_html": "  {% include 'duchess:form-element-label' with { title: label_text, attributes: create_attribute().setAttribute('for', 'test') } %}",
+        "description": { "content": "Description" },
+        "description_display": "after"
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2Zvcm1cL2Zvcm0tZWxlbWVudFwvZm9ybS1lbGVtZW50LnN0b3JpZXMudHdpZyIsImlkIjoiZGVmYXVsdCJ9"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+name: Upcoming Events Card
+props:
+  type: object
+  properties:
+    title:
+      type: string
+    location:
+      type: string
+    date:
+      type: string
+    linkText:
+      type: string
+    linkHref:
+      type: string
+    description:
+      type: string

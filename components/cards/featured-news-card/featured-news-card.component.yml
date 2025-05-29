@@ -1,0 +1,15 @@
+name: Featured News Card
+props:
+  type: object
+  properties:
+    image:
+      type: string
+    date:
+      type: string
+    linkText:
+      type: string
+    linkHref:
+      type: string
+slots:
+  description:
+    title: Description

@@ -1,0 +1,33 @@
+{% stories select with { title: "Form/Select"} %}
+    {% story dropdown_menu with {
+        name: "Dropdown Menu",
+        args: {
+            options: [
+                {
+                    value: "begin",
+                    link: "#",
+                    label: "Begin Your Journey"
+                },
+                {
+                    value: "item1",
+                    link: "#link1",
+                    label: "List Item 1"
+                },
+                {
+                    value: "item2",
+                    link: "#link2",
+                    label: "List Item 2"
+                },
+                {
+                    value: "item3",
+                    link: "#link3",
+                    label: "List Item 3"
+                }
+            ]
+        }
+    } %}
+        {% include 'duchess:select' with {
+            options: options
+        } %}
+    {% endstory %}
+{% endstories %}

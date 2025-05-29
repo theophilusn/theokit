@@ -1,0 +1,21 @@
+{
+  "title": "Carousel",
+  "parameters": {
+    "server": {
+      "url": "https:\/\/sca-web.lndo.site\/storybook\/stories\/render"
+    }
+  },
+  "stories": [
+    {
+      "name": "Default",
+      "args": {
+        "slides": "<div class=\"swiper-slide\" data-carousel-target=\"item\">\n      <div style=\"height:400px\">\n        <img src=\"https:\/\/picsum.photos\/800\/800\" class=\"h-full w-full object-cover\" alt=\"...\">\n      <\/div>\n    <\/div>\n    <div class=\"swiper-slide\" data-carousel-target=\"item\">\n      <div style=\"height:500px\">\n        <img src=\"https:\/\/picsum.photos\/800\/800\" class=\"h-full w-full object-cover\" alt=\"...\">\n      <\/div>\n    <\/div>\n    <div class=\"swiper-slide\" data-carousel-target=\"item\">\n      <div style=\"height:350px\">\n        <img src=\"https:\/\/picsum.photos\/800\/800\" class=\"h-full w-full object-cover\" alt=\"...\">\n      <\/div>\n    <\/div>"
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2Nhcm91c2VsXC9jYXJvdXNlbC5zdG9yaWVzLnR3aWciLCJpZCI6ImRlZmF1bHQifQ%3D%3D"
+        }
+      }
+    }
+  ]
+}

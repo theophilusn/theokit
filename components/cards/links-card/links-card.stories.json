@@ -1,0 +1,29 @@
+{
+  "title": "Cards\/Links Card",
+  "parameters": {
+    "server": {
+      "url": "https:\/\/sca-web.lndo.site\/storybook\/stories\/render"
+    }
+  },
+  "stories": [
+    {
+      "name": "Homepage",
+      "args": {
+        "title": "Popular Links",
+        "limit": true,
+        "links": [
+          { "linkText": "Treatment Centres", "linkUrl": "#" },
+          { "linkText": "Your Treatment Options", "linkUrl": "#" },
+          { "linkText": "Screening", "linkUrl": "#" },
+          { "linkText": "Cancer Centre Pharmacies", "linkUrl": "#" },
+          { "linkText": "Hidden", "linkUrl": "#" }
+        ]
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2NhcmRzXC9saW5rcy1jYXJkXC9saW5rcy1jYXJkLnN0b3JpZXMudHdpZyIsImlkIjoiaG9tZXBhZ2UifQ%3D%3D"
+        }
+      }
+    }
+  ]
+}

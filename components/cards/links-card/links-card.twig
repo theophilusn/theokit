@@ -1,0 +1,23 @@
+{% if variant == 'default' %}
+    {% set classes = 'border-duchess-tan-15' %}
+{% elseif variant == 'intranet' %}
+    {% set classes = 'border-red-500' %}
+{% endif %}
+
+<div class="{{ cn('p-4', 'bg-white') }} border-[6px] rounded-[30px] shadow prose bg-card-circle bg-[right_-1rem_top_-1rem] bg-no-repeat relative w-full md:w-96 lg:w-72 xl:w-80 2xl:w-96 {{ limit ? 'h-[21rem] lg:h-[19rem]' }} {{ classes }}">
+    <div class="flex">
+        <h4 class="text-duchess-pink max-w-[10rem] my-0 pb-4 pl-3">{{ title }}<span class="text-duchess-tan">.</span></h4>
+        <img src="/themes/custom/duchess/images/icons/popular-link.svg" alt="popular link icon" class="ml-auto self-start">
+    </div>
+    <ul class="list-none flex flex-col pl-0 mt-0">
+        {% for link in links %}
+            {% set isFileOrExternal = link['#url_title']|slice(-3) == 'pdf' or link['#url_title']|slice(0, 4) == 'http'  %}
+            {% if limit and loop.index <= 4 or limit == false %}
+                <li class="inline-flex items-center relative gap-4 {{ limit ? 'my-1 lg:my-0' : 'my-6' }} h-12">
+                    <img src="/themes/custom/duchess/images/icons/list-link-bullet.svg" alt="popular link icon">
+                    <a class="no-underline hover:underline decoration-duchess-pink text-xl" href="{{ link['#url_title'] }}" target="{{ isFileOrExternal ? '_blank' }}">{{ link['#title'] }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>

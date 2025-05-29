@@ -1,0 +1,27 @@
+name: Patient Story Card
+props:
+  type: object
+  properties:
+    title:
+      type: string
+    brandColour:
+      type: string
+      enum:
+        - pink
+        - green
+        - blue
+    view:
+      type: string
+      enum:
+        - full
+        - sidebar
+        - mini
+    linkHref:
+      type: string
+    linkText:
+      type: string
+    description:
+      type: string
+slots:
+  image:
+    title: Image

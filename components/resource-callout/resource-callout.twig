@@ -1,0 +1,16 @@
+<div class="prose">
+    <div class="text-duchess-green font-extrabold text-[1.625rem] pb-4">Other Resources</div>
+    <div class="lg:w-[52rem]">
+        {% block details %}
+        {{ details }}
+        {% endblock %}
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 md:mt-10">
+        {% for link in links %}
+            <div class="inline-flex items-center gap-4 my-0 h-12">
+                <img src="/themes/custom/duchess/images/icons/list-link-bullet.svg" alt="popular link icon">
+                <a class="no-underline hover:underline decoration-duchess-pink" href="{{ link['#url_title'] }}" target="_blank">{{ link['#title'] }}</a>
+            </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,12 @@
+{% stories alert with { title: "Alert"} %}
+    {% story status with {
+        name: "Status",
+        args: { type: "status", messages: ["This is a status message"] }
+    } %}
+        {% embed 'duchess:alert' with {
+            messages: messages,
+            type: type,
+        } %}
+        {% endembed %}
+    {% endstory %}
+{% endstories %}

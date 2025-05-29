@@ -1,0 +1,87 @@
+{% stories patient_story_card with { title: "Cards/Patient Story Card"} %}
+    {% story default with {
+        name: "Default",
+        args: {
+            brandColour: "pink",
+            title: "Janet's Story",
+            description: "During your treatment, you’ll be able to manage your symptoms with healthcare experts. They’ll give you information and options tailored to your needs. We’ll also help you and your family find community resources. We believe in considering all your options carefully.",
+            image: "/themes/custom/duchess/images/janet_profile.png",
+            linkText: "Read Full Story",
+            linkHref: "#link"
+        }
+    } %}
+    {% include 'duchess:patient-story-card' with {
+        title: title,
+        brandColour: brandColour,
+        linkHref: linkHref,
+        linkText: linkText,
+        image: image,
+        description: description
+    } %}
+    {% endstory %}
+    {% story full with {
+        name: "Full",
+        args: {
+            brandColour: "pink",
+            title: "Janet's Story",
+            view: "full",
+            description: "During your treatment, you’ll be able to manage your symptoms with healthcare experts. They’ll give you information and options tailored to your needs. We’ll also help you and your family find community resources. We believe in considering all your options carefully.",
+            image: "/themes/custom/duchess/images/janet_profile.png",
+            linkText: "Read Full Story",
+            linkHref: "#link"
+        }
+    } %}
+    {% include 'duchess:patient-story-card' with {
+        title: title,
+        brandColour: brandColour,
+        linkHref: linkHref,
+        linkText: linkText,
+        image: image,
+        description: description,
+        view: view
+    } %}
+    {% endstory %}
+    {% story sidebar with {
+        name: "Sidebar",
+        args: {
+            brandColour: "green",
+            title: "Carmen's Story",
+            view: "sidebar",
+            description: "During your treatment, you’ll be able to manage your symptoms with healthcare experts. They’ll give you information and options tailored to your needs. We’ll also help you and your family find community resources. We believe in considering all your options carefully.",
+            image: "/themes/custom/duchess/images/carmen_profile.png",
+            linkText: "Read Full Story",
+            linkHref: "#link"
+        }
+    } %}
+    {% include 'duchess:patient-story-card' with {
+        title: title,
+        brandColour: brandColour,
+        linkHref: linkHref,
+        linkText: linkText,
+        image: image,
+        description: description,
+        view: view
+    } %}
+    {% endstory %}
+    {% story mini with {
+        name: "Mini",
+        args: {
+            brandColour: "blue",
+            title: "Douglas' Story",
+            view: "mini",
+            description: "During your treatment, you’ll be able to manage your symptoms with healthcare experts. They’ll give you information and options tailored to your needs. We’ll also help you and your family find community resources. We believe in considering all your options carefully.",
+            linkText: "Read Full Story",
+            linkHref: "#link"
+        }
+    } %}
+        {% include 'duchess:patient-story-card' with {
+            title: title,
+            brandColour: brandColour,
+            linkHref: linkHref,
+            linkText: linkText,
+            image: image,
+            description: description,
+            view: view
+        } %}
+    {% endstory %}
+{% endstories %}

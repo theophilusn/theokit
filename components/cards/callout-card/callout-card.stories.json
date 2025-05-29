@@ -1,0 +1,58 @@
+{
+  "title": "Cards\/Callout Card",
+  "parameters": {
+    "server": {
+      "url": "https:\/\/sca-web.lndo.site\/storybook\/stories\/render"
+    }
+  },
+  "stories": [
+    {
+      "name": "Event",
+      "args": {
+        "title": "Events",
+        "callout": "event",
+        "limit": false,
+        "linkHref": "#",
+        "linkText": "View All Events",
+        "description": "Learn about events in your area that help foster and build community for cancer patients in Saskatchewan."
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2NhcmRzXC9jYWxsb3V0LWNhcmRcL2NhbGxvdXQtY2FyZC5zdG9yaWVzLnR3aWciLCJpZCI6ImV2ZW50In0%3D"
+        }
+      }
+    },
+    {
+      "name": "News",
+      "args": {
+        "title": "News",
+        "callout": "news",
+        "limit": false,
+        "linkHref": "#",
+        "linkText": "Read More",
+        "description": "Read the latest news being announced by our team and cancer researchers, and learn about events in your area that help build community for Saskatchewan cancer patients."
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2NhcmRzXC9jYWxsb3V0LWNhcmRcL2NhbGxvdXQtY2FyZC5zdG9yaWVzLnR3aWciLCJpZCI6Im5ld3MifQ%3D%3D"
+        }
+      }
+    },
+    {
+      "name": "Location",
+      "args": {
+        "title": "Find a Treatment Centre",
+        "callout": "location",
+        "limit": false,
+        "linkHref": "#",
+        "linkText": "View Location",
+        "description": "Learn more about our Treatment Centre\u2019s in Saskatchewan and what each location has to offer patients."
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2NhcmRzXC9jYWxsb3V0LWNhcmRcL2NhbGxvdXQtY2FyZC5zdG9yaWVzLnR3aWciLCJpZCI6ImxvY2F0aW9uIn0%3D"
+        }
+      }
+    }
+  ]
+}

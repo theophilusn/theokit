@@ -1,0 +1,26 @@
+{
+  "title": "Cards\/Upcoming Events Card",
+  "parameters": {
+    "server": {
+      "url": "https:\/\/sca-web.lndo.site\/storybook\/stories\/render"
+    }
+  },
+  "stories": [
+    {
+      "name": "Default",
+      "args": {
+        "title": "Cancer Screening Research Forum",
+        "location": "Regina",
+        "date": "October 13, 2023",
+        "linkHref": "#",
+        "linkText": "See more",
+        "description": "Learn about the latest research being developed  to screen for various types of cancer for our patients."
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2NhcmRzXC91cGNvbWluZy1ldmVudHMtY2FyZFwvdXBjb21pbmctZXZlbnRzLWNhcmQuc3Rvcmllcy50d2lnIiwiaWQiOiJkZWZhdWx0In0%3D"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<div>
+    <div class="sm:rounded-t-[30px] sm:border-t-[6px] sm:border-r-[6px] sm:border-b-[6px] sm:max-w-[80rem] sm:max-h-96 sm:flex border-duchess-tan-15 not-prose sm:rounded-br-[30px] relative">
+        <div class="[&_img]:h-96 [&_img]:-mt-1 [&_img]:sm:rounded-tl-[30px] [&_img]:sm:rounded-bl-[30px] [&_img]:sm:news-right-border not-prose w-full [&_img]:profile-bottom-border">
+            {% if image %}
+                {{ drupal_image(image, 'featured_news', responsive=true) }}
+            {% else %}
+                <img src="/themes/custom/duchess/images/SaskCancerAgency-Logo--blue.svg" alt="SCA logo" width="400px">
+            {% endif %}
+        </div>
+        <div class="sm:px-10 px-5 pb-10 md:py-10 lg:py-20 text-duchess-dark-blue w-[95%]">
+            <div class="text-sm">{{ date }}</div>
+            <div class="py-6 text-2xl font-bold">{{ description }}</div>
+            <a href="{{ linkHref }}" class="pt-8 flex items-center">
+                <img src="/themes/custom/duchess/images/icons/list-link-bullet.svg" alt="link icon">
+                <div class="pl-3 text-black">{{ linkText }}</div>
+                <img src="/themes/custom/duchess/images/icons/news--blue.svg" alt="blue news icon"
+                     class="ml-auto self-start">
+            </a>
+        </div>
+        <div class="sm:flex hidden relative -mt-[6px] -mr-[6px]">
+            <div class="absolute top-0 right-0">
+                <div class="bg-duchess-tan w-48 h-14 rounded-tr-[30px] rounded-bl-[30px] text-white flex justify-center items-center">
+                    Featured News
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
