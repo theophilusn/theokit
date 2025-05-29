@@ -1,0 +1,69 @@
+{
+  "title": "Button",
+  "parameters": {
+    "server": {
+      "url": "https:\/\/sca-web.lndo.site\/storybook\/stories\/render"
+    }
+  },
+  "stories": [
+    {
+      "name": "Primary Button",
+      "args": { "colour": "dark-blue", "linkHref": "#", "linkText": "Donate" },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2J1dHRvblwvYnV0dG9uLnN0b3JpZXMudHdpZyIsImlkIjoicHJpbWFyeV9idXR0b24ifQ%3D%3D"
+        }
+      }
+    },
+    {
+      "name": "Primary Button with Icon",
+      "args": {
+        "colour": "dark-blue",
+        "icon": "heart",
+        "linkHref": "#",
+        "linkText": "Donate"
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2J1dHRvblwvYnV0dG9uLnN0b3JpZXMudHdpZyIsImlkIjoicHJpbWFyeV9idXR0b25faWNvbiJ9"
+        }
+      }
+    },
+    {
+      "name": "Tan Button",
+      "args": { "colour": "tan", "linkHref": "#", "linkText": "View Details" },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2J1dHRvblwvYnV0dG9uLnN0b3JpZXMudHdpZyIsImlkIjoidGFuX2J1dHRvbiJ9"
+        }
+      }
+    },
+    {
+      "name": "Green Button",
+      "args": {
+        "colour": "green",
+        "linkHref": "#",
+        "linkText": "View Locations"
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2J1dHRvblwvYnV0dG9uLnN0b3JpZXMudHdpZyIsImlkIjoiZ3JlZW5fYnV0dG9uIn0%3D"
+        }
+      }
+    },
+    {
+      "name": "Light Blue Button",
+      "args": {
+        "colour": "light-blue",
+        "icon": "magnifier",
+        "linkHref": "#",
+        "linkText": ""
+      },
+      "parameters": {
+        "server": {
+          "id": "eyJwYXRoIjoidGhlbWVzXC9jdXN0b21cL2R1Y2hlc3NcL2NvbXBvbmVudHNcL2J1dHRvblwvYnV0dG9uLnN0b3JpZXMudHdpZyIsImlkIjoibGlnaHRfYmx1ZV9idXR0b24ifQ%3D%3D"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{% stories button with { title: "Button"} %}
+    {% story primary_button with {
+        name: "Primary Button",
+        args: { colour: "dark-blue", linkHref: "#", linkText: "Donate"}
+    } %}
+        {% embed 'duchess:button' with {
+            colour: colour,
+            linkHref: linkHref,
+            linkText: linkText,
+        } %}
+        {% endembed %}
+    {% endstory %}
+
+    {% story primary_button_icon with {
+        name: "Primary Button with Icon",
+        args: { colour: "dark-blue", icon: "heart", linkHref: "#", linkText: "Donate"}
+    } %}
+        {% embed 'duchess:button' with {
+            colour: colour,
+            icon: icon,
+            linkHref: linkHref,
+            linkText: linkText,
+        } %}
+        {% endembed %}
+    {% endstory %}
+
+    {% story tan_button with {
+        name: "Tan Button",
+        args: { colour: "tan", linkHref: "#", linkText: "View Details"}
+    } %}
+        {% embed 'duchess:button' with {
+            colour: colour,
+            linkHref: linkHref,
+            linkText: linkText,
+        } %}
+        {% endembed %}
+    {% endstory %}
+
+    {% story green_button with {
+        name: "Green Button",
+        args: { colour: "green", linkHref: "#", linkText: "View Locations"}
+    } %}
+        {% embed 'duchess:button' with {
+            colour: colour,
+            linkHref: linkHref,
+            linkText: linkText,
+        } %}
+        {% endembed %}
+    {% endstory %}
+
+    {% story light_blue_button with {
+        name: "Light Blue Button",
+        args: { colour: "light-blue", icon: "magnifier", linkHref: "#", linkText: ""}
+    } %}
+        {% embed 'duchess:button' with {
+            colour: colour,
+            icon: icon,
+            linkHref: linkHref,
+            linkText: linkText,
+        } %}
+        {% endembed %}
+    {% endstory %}
+{% endstories %}

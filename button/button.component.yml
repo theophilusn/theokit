@@ -1,0 +1,23 @@
+name: Button
+props:
+  type: object
+  properties:
+    colour:
+      type: string
+      enum:
+        - dark-blue
+        - tan
+        - green
+        - light-blue
+    icon:
+      type: string
+      enum:
+        - heart
+        - arrow
+        - magnifier
+    linkHref:
+      type: string
+    linkText:
+      type: string
+    linkAttr:
+      type: string

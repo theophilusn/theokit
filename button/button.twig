@@ -1,0 +1,18 @@
+{% if colour == 'dark-blue' %}
+    {% set buttonClasses = 'uppercase text-white font-extrabold gap-1.5 tracking-[0.55px] px-5 bg-duchess-dark-blue hover:bg-duchess-dark-blue/70' %}
+{% elseif colour == 'tan' %}
+    {% set buttonClasses = 'text-black items-start gap-2 tracking-wide px-5 bg-duchess-tan hover:bg-duchess-tan/70' %}
+{% elseif colour == 'green' %}
+    {% set buttonClasses = 'text-white items-start gap-2 tracking-wide px-5 bg-duchess-green hover:bg-duchess-green/70' %}
+{% else %}
+    {% set buttonClasses = 'bg-duchess-light-blue hover:bg-duchess-light-blue/70 px-3 w-10 h-10' %}
+{% endif %}
+
+<a data-appointmentCard-target="button"
+   class="inline-flex align-center decoration-0 no-underline rounded-[30px] {{ buttonClasses }} py-3"
+   href="{{ linkHref }}" {{ linkAttr }}>
+    {% if icon %}
+        <img src="/themes/custom/duchess/images/icons/{{ icon }}.svg" alt="{{ icon }} icon">
+    {% endif %}
+    {{ linkText }}
+</a>
