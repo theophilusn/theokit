@@ -1,0 +1,13 @@
+name: Button
+props:
+  type: object
+  properties:
+    colour:
+      type: string
+      enum:
+        - dark-blue
+        - tan
+        - green
+        - light-blue
+        - white
+        - transparent
